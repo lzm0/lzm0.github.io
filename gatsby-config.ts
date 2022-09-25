@@ -23,7 +23,7 @@ const config: GatsbyConfig = {
         short_name: `Zimo Li`,
         start_url: `/`,
         background_color: `#FFFFFF`,
-        theme_color: `#000000`,
+        theme_color: `#FFFFFF`,
         display: `standalone`,
         icon: `src/images/favicon.png`,
       },
