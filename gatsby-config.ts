@@ -16,6 +16,18 @@ const config: GatsbyConfig = {
         trackingId: "305811363",
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Zimo Li`,
+        short_name: `Zimo Li`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
