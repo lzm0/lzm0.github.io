@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklzm0_github_io=self.webpackChunklzm0_github_io||[]).push([[691],{7200:function(e,n,t){t.r(n),t.d(n,{Head:function(){return i}});var u=t(7294);n.default=function(){return u.createElement("main",null)};var i=function(){return u.createElement("title",null,"Zimo Li")}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-8549419eac3ef2aeb74e.js.map
