@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply flex flex-col h-screen justify-center items-center space-y-6 overflow-hidden unblur;
+  @apply flex flex-col min-h-screen justify-center items-center space-y-6 unblur;
 }
 
 .headline {
