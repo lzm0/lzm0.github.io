@@ -3,23 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply flex flex-col min-h-screen justify-center items-center space-y-6 unblur;
+  @apply flex flex-col min-h-screen justify-center items-center space-y-6;
 }
 
 .headline {
   @apply p-2 transition text-transparent bg-clip-text bg-gradient-to-br from-rose-500 to-yellow-500 font-sans font-extrabold text-8xl sm:text-9xl tracking-tight whitespace-nowrap subpixel-antialiased;
-}
-
-.tile {
-  @apply flex flex-row px-5 items-center h-16 w-64 rounded-2xl transition hover:scale-105 border-2;
-}
-
-.tile-icon {
-  @apply w-8 h-8;
-}
-
-.tile-text {
-  @apply mx-auto font-sans font-semibold text-2xl text-white align-middle;
 }
 
 .github {
@@ -38,17 +26,52 @@ body {
   @apply bg-pink-500 border-pink-400;
 }
 
-.unblur {
-  animation-name: unblur;
-  animation-timing-function: ease-out;
-  animation-duration: 0.5s;
+.tile {
+  @apply flex flex-row px-5 items-center h-16 w-64 rounded-2xl transition hover:scale-105 border-2;
 }
 
-@keyframes unblur {
+.tile-icon {
+  @apply w-8 h-8;
+}
+
+.tile-text {
+  @apply mx-auto font-sans font-semibold text-2xl text-white align-middle;
+}
+
+body * {
+  animation-name: entrance;
+  animation-timing-function: ease-out;
+  animation-duration: 0.6s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes entrance {
   from {
-    filter: blur(30px);
+    filter: blur(10px);
+    transform: translateY(-10px) scale(0.8);
   }
   to {
     filter: blur(0);
+    transform: translateY(0) scale(1);
   }
+}
+
+.headline {
+  animation-delay: 0s;
+}
+
+.github {
+  animation-delay: 0.1s;
+}
+
+.linkedin {
+  animation-delay: 0.2s;
+}
+
+.blog {
+  animation-delay: 0.3s;
+}
+
+.cronify {
+  animation-delay: 0.4s;
 }
