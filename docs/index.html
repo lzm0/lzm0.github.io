@@ -9,7 +9,6 @@
     <title>Zimo Li</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -30,9 +29,7 @@
   </head>
 
   <body style="overflow: hidden" id="background">
-    <div
-      class="flex flex-col h-screen justify-center items-center space-y-6 from-rose-500 to-yellow-500"
-    >
+    <div class="flex flex-col h-screen justify-center items-center space-y-6">
       <div
         class="animate__animated animate__fadeInDown p-2 transition text-transparent bg-clip-text bg-gradient-to-br from-rose-500 to-yellow-500 font-sans font-extrabold text-8xl sm:text-9xl tracking-tight whitespace-nowrap subpixel-antialiased"
       >
@@ -42,60 +39,36 @@
         href="https://github.com/lzm0"
         class="animate__animated animate__fadeInUp"
       >
-        <div
-          class="flex flex-row items-center h-16 w-64 rounded-2xl transition shadow-lg shadow-slate-500/25 bg-gradient-to-b from-slate-600 to-slate-700 border-b-4 border-slate-800 hover:scale-105"
-        >
-          <image src="images/github.png" class="ml-5 w-8 h-8"></image>
-          <div
-            class="font-sans font-semibold text-2xl text-white align-middle mx-auto"
-          >
-            GitHub
-          </div>
+        <div class="tile github">
+          <image src="images/github.png" class="tile-icon"></image>
+          <div class="tile-text">GitHub</div>
         </div>
       </a>
       <a
         href="https://www.linkedin.com/in/zimo-li-728bab15b/"
         class="animate__animated animate__fadeInUp"
       >
-        <div
-          class="flex flex-row items-center h-16 w-64 rounded-2xl transition shadow-lg shadow-blue-500/25 bg-gradient-to-b from-blue-500 to-blue-600 border-b-4 border-blue-700 hover:scale-105"
-        >
-          <image src="images/linkedin.png" class="ml-5 w-8 h-8"></image>
-          <div
-            class="font-sans font-semibold text-2xl text-white align-middle mx-auto"
-          >
-            LinkedIn
-          </div>
+        <div class="tile linkedin">
+          <image src="images/linkedin.png" class="tile-icon"></image>
+          <div class="tile-text">LinkedIn</div>
         </div>
       </a>
       <a
         href="https://blog.zimo.li/"
         class="animate__animated animate__fadeInUp"
       >
-        <div
-          class="flex flex-row items-center h-16 w-64 rounded-2xl transition shadow-lg shadow-indigo-500/25 bg-gradient-to-b from-indigo-500 to-indigo-600 border-b-4 border-indigo-700 hover:scale-105"
-        >
-          <image src="images/hashnode.png" class="ml-5 w-8 h-8"></image>
-          <div
-            class="font-sans font-semibold text-2xl text-white align-middle mx-auto"
-          >
-            Blog
-          </div>
+        <div class="tile blog">
+          <image src="images/hashnode.png" class="tile-icon"></image>
+          <div class="tile-text">Blog</div>
         </div>
       </a>
       <a
         href="https://cronify.zimo.li/"
         class="animate__animated animate__fadeInUp"
       >
-        <div
-          class="flex flex-row items-center h-16 w-64 rounded-2xl transition shadow-lg shadow-pink-500/25 bg-gradient-to-b from-pink-500 to-pink-600 border-b-4 border-pink-700 hover:scale-105"
-        >
-          <image src="images/cronify.svg" class="ml-5 w-8 h-8"></image>
-          <div
-            class="font-sans font-semibold text-2xl text-white align-middle mx-auto"
-          >
-            Cronify
-          </div>
+        <div class="tile cronify">
+          <image src="images/cronify.svg" class="tile-icon"></image>
+          <div class="tile-text">Cronify</div>
         </div>
       </a>
     </div>
