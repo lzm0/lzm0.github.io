@@ -11,23 +11,23 @@ body {
 }
 
 .github {
-  @apply bg-slate-600 border-slate-500;
+  @apply bg-slate-600 hover:bg-slate-700;
 }
 
 .linkedin {
-  @apply bg-blue-500 border-blue-400;
+  @apply bg-blue-500 hover:bg-blue-600;
 }
 
 .blog {
-  @apply bg-indigo-500 border-indigo-400;
+  @apply bg-indigo-500 hover:bg-indigo-600;
 }
 
 .cronify {
-  @apply bg-pink-500 border-pink-400;
+  @apply bg-pink-500 hover:bg-pink-600;
 }
 
 .tile {
-  @apply flex flex-row px-5 items-center h-16 w-64 rounded-2xl transition hover:scale-105 border-2;
+  @apply flex flex-row px-5 items-center h-16 w-64 rounded-2xl shadow-md transition active:scale-95;
 }
 
 .tile-icon {
@@ -39,16 +39,26 @@ body {
 }
 
 body * {
-  animation-name: entrance;
   animation-timing-function: ease-out;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: backwards;
 }
 
-@keyframes entrance {
+@keyframes entrance-headline {
   from {
-    filter: blur(10px) opacity(0.5);
-    transform: translateY(-10px) scale(0.8);
+    filter: blur(20px) opacity(0);
+    transform: scale(1.5);
+  }
+  to {
+    filter: blur(0) opacity(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes entrance-tile {
+  from {
+    filter: blur(20px) opacity(0);
+    transform: translateY(-20px) scale(0.75);
   }
   to {
     filter: blur(0) opacity(1);
@@ -57,21 +67,25 @@ body * {
 }
 
 .headline {
-  animation-delay: 0s;
+  animation-name: entrance-headline;
+}
+
+.tile {
+  animation-name: entrance-tile;
 }
 
 .github {
-  animation-delay: 0.1s;
+  animation-delay: 1.5s;
 }
 
 .linkedin {
-  animation-delay: 0.2s;
+  animation-delay: 1.6s;
 }
 
 .blog {
-  animation-delay: 0.3s;
+  animation-delay: 1.7s;
 }
 
 .cronify {
-  animation-delay: 0.4s;
+  animation-delay: 1.8s;
 }
