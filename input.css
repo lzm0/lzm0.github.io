@@ -47,7 +47,7 @@ body * {
 @keyframes entrance-headline {
   from {
     filter: blur(20px) opacity(0);
-    transform: scale(1.5);
+    transform: scale(1.25);
   }
   to {
     filter: blur(0) opacity(1);
@@ -75,17 +75,17 @@ body * {
 }
 
 .github {
-  animation-delay: 1.5s;
+  animation-delay: 1.2s;
 }
 
 .linkedin {
-  animation-delay: 1.6s;
+  animation-delay: 1.3s;
 }
 
 .blog {
-  animation-delay: 1.7s;
+  animation-delay: 1.4s;
 }
 
 .cronify {
-  animation-delay: 1.8s;
+  animation-delay: 1.5s;
 }
